@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  contextPath: /client
+
+security:
+  basic:
+    enabled: false
+
+sageone:
+  client:
+    client-id: confidential
+    client-secret: secret
+    access-token-uri: https://oauth.eu.sageone.com/token
+    user-authorization-uri: https://www.sageone.com/oauth2/auth/central
+    scope: read
+  resource:
+    uri: https://api.columbus.sage.com/de/sageone
