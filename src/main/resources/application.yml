@@ -1,6 +1,5 @@
 server:
   port: 8080
-  contextPath: /client
 
 security:
   basic:
@@ -12,6 +11,9 @@ sageone:
     client-secret: secret
     access-token-uri: https://oauth.eu.sageone.com/token
     user-authorization-uri: https://www.sageone.com/oauth2/auth/central
-    scope: read
+    scope: readonly
+
   resource:
     uri: https://api.columbus.sage.com/de/sageone
+    apim-subscription-key: confidential
+    callback-url: http://localhost:8080/client

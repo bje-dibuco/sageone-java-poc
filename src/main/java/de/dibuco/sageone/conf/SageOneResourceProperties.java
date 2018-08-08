@@ -11,4 +11,6 @@ import org.springframework.stereotype.Component;
 @Setter
 public class SageOneResourceProperties {
     private String uri;
+    private String apimSubscriptionKey;
+    private String callbackUrl;
 }
